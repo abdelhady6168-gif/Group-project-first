@@ -1,39 +1,83 @@
+/* indexCss.css */
+
 body{
-    background-color: #FDF5E6;
+    margin:0;
+    padding:0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background:#FDF5E6;
+}
+
+/* Sidebar */
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    height:100vh;
+    background:#ffb100;
+    padding:20px;
+}
+
+.logo-name{
+    color:black;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.nav-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.nav-list li{
+    margin:12px 0;
+}
+
+.nav-list li a{
+    display:block;
+    color:black;
+    text-decoration:none;
+    padding:12px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-list li a:hover{
+    background:rgb(204, 93, 0);
+    color:white;
+}
+
+/* Right Side Content */
+.main-content{
+    margin-left:250px;
+    padding:20px;
 }
 
 /* Navbar */
 .navbar{
-    padding: 15px 25px;
+    padding:18px;
 }
 
-/* Main Body */
+/* Main Body Box */
 .main-body{
-    width: 80%;
-    margin: 40px auto;
-    padding: 40px;
-
-    text-align: center;
-    color: black;
-
-    background-color: #ffb100;
-
-    border: 5px solid rgb(204, 93, 0);
-    border-radius: 30px;
-
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    margin-top:30px;
+    background:#ffb100;
+    border:5px solid rgb(204, 93, 0);
+    border-radius:30px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Heading */
 .main-body h1{
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size:55px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
-/* Paragraphs */
 .main-body p{
-    font-size: 18px;
+    font-size:22px;
 }

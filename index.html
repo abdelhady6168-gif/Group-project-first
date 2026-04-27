@@ -1,68 +1,53 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management System</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Your CSS File -->
-    <link rel="stylesheet" href="css/indexCss.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css/indexCss.css">
 </head>
 
 <body>
 
+<!-- Sidebar -->
+<div class="sidebar" style="border: 5px solid black; border-right:5px solid black; border-bottom:5px solid black;border-bottom-right-radius:10px;border-top-right-radius: 10px;">
+    <div class="logo-name">BrandName</div>
+
+    <ul class="nav-list">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container-fluid">
-
-            <a class="navbar-brand fw-bold" href="#">Event Management System</a>
-
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
+    <nav class="navbar bg-light shadow-sm rounded">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar-brand fw-bold m-0">
+                Event Management System
+            </span>
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main Body -->
     <div class="main-body">
         <h1>Event Management System</h1>
         <p>Welcome to the Event Management System.</p>
         <p>This is the body so you know where to put your content.</p>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 
 </body>
 </html>
