@@ -3,88 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Dashboard</title>
+
+    <!-- ربط CSS -->
     <link rel="stylesheet" href="css/dashbord.css">
-    
+
+    <!-- الخط -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="logo-name">BrandName</div>
 
-        <ul class="nav-list">
-            <li><a href="">Dashboard</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="dashbord.html">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
+<div class="header">
+    <h1>Event Management Dashboard</h1>
+</div>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <h3>Total Events</h3>
+        <span class="stat-number">128</span>
     </div>
 
-    <main class="main-content">
-        
-        <header class="navbar">
-            <span>Dashboard User</span>
-        </header>
+    <div class="stat-card">
+        <h3>Total Rooms Booked</h3>
+        <span class="stat-number">42</span>
+    </div>
 
-        <section class="main-body">
-            <h1>$ 628</h1>
-            <p>Total Earning</p>
-        </section>
+    <div class="stat-card">
+        <h3>Total Organizations</h3>
+        <span class="stat-number">15</span>
+    </div>
+</div>
 
-        <div class="stats-grid">
-            <div class="main-body small-card">
-                <h1>2434</h1>
-                <p>Shares</p>
-            </div>
-            <div class="main-body small-card">
-                <h1>1259</h1>
-                <p>Likes</p>
-            </div>
-            <div class="main-body small-card">
-                <h1>8.5</h1>
-                <p>Rating</p>
-            </div>
-        </div>
+<div class="events-list-container">
+    <h2>List of Coming Events</h2>
 
-        <div class="main-body chart-container">
-            <h2 style="font-size: 24px; margin-bottom: 30px;">Monthly Growth (CSS Chart)</h2>
-            
-            <div class="css-chart">
-                <div class="bar-group">
-                    <div class="bar" style="height: 40%;"></div>
-                    <span>Jan</span>
-                </div>
-                <div class="bar-group">
-                    <div class="bar" style="height: 70%;"></div>
-                    <span>Feb</span>
-                </div>
-                <div class="bar-group">
-                    <div class="bar" style="height: 50%;"></div>
-                    <span>Mar</span>
-                </div>
-                <div class="bar-group">
-                    <div class="bar" style="height: 90%;"></div>
-                    <span>Apr</span>
-                </div>
-                <div class="bar-group">
-                    <div class="bar" style="height: 65%;"></div>
-                    <span>May</span>
-                </div>
-                <div class="bar-group">
-                    <div class="bar" style="height: 80%;"></div>
-                    <span>Jun</span>
-                </div>
-            </div>
-        </div>
+    <table class="events-table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Organization</th>
+                <th>Room</th>
+                <th>Date</th>
+            </tr>
+        </thead>
 
-    </main>
+        <tbody>
+            <tr>
+                <td>Tech Summit 2026</td>
+                <td> Cooding Club</td>
+                <td>Room 3</td>
+                <td>May 12, 2026</td>
+            </tr>
 
-    
-    
+            <tr>
+                <td>Annual Gala</td>
+                <td>Ai & Robotics Club</td>
+                <td>Room 5</td>
+                <td>June 05, 2026</td>
+            </tr>
+
+            <tr>
+                <td>Design Workshop</td>
+                <td>Sport Association</td>
+                <td>Room 6</td>
+                <td>June 18, 2026</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>
-    
-
-  
