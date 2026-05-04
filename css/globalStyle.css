@@ -1,0 +1,111 @@
+/* University Event Management Portal — Global Stylesheet */
+
+
+/* donwload the font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+/* ── CSS Variables ── */
+:root {
+  --primary:       #1a3a6b;
+  --primary-dark:  #0f2347;
+  --gold:          #c9a227;
+  --gold-light:    #f0c84a;
+  --white:         #ffffff;
+  --off-white:     #f5f7fa;
+  --light-gray:    #e8ecf2;
+  --text-main:     #1e2a3a;
+  --text-muted:    #6b7a8d;
+  --success:       #1e7e4e;
+  --danger:        #c0392b;
+  --warning:       #d97706;
+  --border:        #d0d9e8;
+  --shadow:        0 4px 16px rgba(26, 58, 107, 0.13);
+  --radius:        8px;
+  --font:          'Cairo', sans-serif;
+  --transition:    0.25s ease;
+  --btn:           #198754;
+  --btn-hover:     #1b5c3d;
+}
+
+/* ── Base ── */
+
+body {
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--text-main);
+  background-color: var(--off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font);
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--gold); }
+
+/* ── Buttons ── */
+.btn {
+  font-family: var(--font);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.btn:focus, .btn:focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.25);
+}
+
+.btn-primary { background-color: var(--btn); border-color: var(--btn); color: var(--white); }
+.btn-primary:hover { background-color: var(--btn-hover); border-color: var(--btn-hover); color: var(--white); }
+
+.btn-warning { background-color: var(--warning); border-color: var(--warning); color: var(--white); }
+.btn-warning:hover { background-color: #b45309; border-color: #b45309; color: var(--white); }
+
+.btn-danger { background-color: var(--danger); border-color: var(--danger); color: var(--white); }
+.btn-danger:hover { background-color: #922b21; border-color: #922b21; color: var(--white); }
+
+/* ── Forms ── */
+.form-control, .form-select {
+  font-family: var(--font);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  margin-bottom: 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(26, 58, 107, 0.15);
+  outline: none;
+}
+
+/* ── Tables ── */
+.table { font-family: var(--font); font-size: 0.9rem; }
+
+.table thead th,
+.table-primary > thead > tr > th {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.table tbody tr:hover { background-color: rgba(26, 58, 107, 0.04); }
+
+/* ── Cards ── */
+.card { border-radius: var(--radius); box-shadow: var(--shadow); border-color: var(--border); }
+.card-title { color: var(--primary); font-weight: 700; }
+
+/* ── Navbar ── */
+.navbar { background-color: var(--primary) !important; border-bottom: 3px solid var(--gold); }
+.navbar-brand { font-weight: 800; color: var(--white) !important; }
+.nav-link { color: rgba(255,255,255,0.85) !important; }
+.nav-link:hover, .nav-link.active { color: var(--white) !important; background-color: rgba(201,162,39,0.2); border-radius: var(--radius); }
+
+/* ── Footer ── */
+footer { background-color: var(--primary-dark); color: rgba(255,255,255,0.75); border-top: 3px solid var(--gold); padding: 2rem; }
+
