@@ -26,6 +26,53 @@
   --btn:           #198754;
   --btn-hover:     #1b5c3d;
 }
+/* ── Sidebar ── */
+/* ── Sidebar ── */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: var(--primary) !important;        
+  border-right: 3px solid var(--gold); 
+  border-top: 3px solid var(--gold);      
+  border-bottom: 3px solid var(--gold);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar .logo-name {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--gold);
+}
+
+.sidebar .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar .nav-list a {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.sidebar .nav-list a:hover,
+.sidebar .nav-list a.active {
+  background-color: var(--gold);           /* ذهبي عند التحديد */
+  color: var(--white);
+}
 
 /* ── Base ── */
 
