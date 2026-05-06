@@ -14,7 +14,6 @@ body{
     left:0;
     width:260px;
     height:100vh;
-    background:linear-gradient(180deg,#367D8A,#24555e);
     padding:25px 18px;
     box-shadow:4px 0 18px rgba(0,0,0,0.15);
 
@@ -64,7 +63,6 @@ body{
 
 .nav-list li a:hover{
     background:white;
-    color:#24555e;
     transform:translateX(6px);
     box-shadow:0 6px 14px rgba(0,0,0,0.15);
 }
@@ -98,6 +96,7 @@ body{
     margin-bottom:10px;
 }
 
+<<<<<<< Updated upstream
 footer {
     background: #000;
     color: white;
@@ -107,4 +106,19 @@ footer {
     left: 0;
     width: 100%;
     margin-top: 262px; /* Adjust this value if needed to prevent overlap with main content */
+=======
+.top-header{
+     background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    color: #111;
+    padding: 18px 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    position: sticky;
+>>>>>>> Stashed changes
 }
