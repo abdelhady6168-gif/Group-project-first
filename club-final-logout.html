@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management System</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+ <link rel="stylesheet" href="css/club.css">
+ <link rel="stylesheet" href="css/globalStyle.css">
+ <link rel="stylesheet" href="css/indexCss.css">
+</head>
+
+<body>
+    <div class="top-header"> University Event management system</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo-name">
+        Room Management System
+    </div>
+
+    <ul class="nav-list">
+        <li><a href="dashboard-login-iframe.html">Dashboard</a></li>
+        <li><a href="room-login-iframe.html">Room</a></li>
+        <li><a href="UserDirectory-login-iframe.html">User Directory</a></li>
+        <li><a href="index.html" >Events</a></li>
+        <li><a href="club-login-iframe.html" class="active">Clubs</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+</div>
+
+<div class="container mt-5">
+    
+    <h2 class="section-header">University Club Profiles</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                        <i class="bi bi-code-slash me-2"></i>Coding Club</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Dr. Ahmad</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 120 Members</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success fw-bold">
+                        <i class="bi bi-robot me-2" style="color: #0a9d31;"></i>AI & Robotics Club</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Prof. Salem</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 85 Members</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-danger fw-bold"><i class="bi bi-trophy-fill me-2" style="color: #ffc107;"></i>Sports Association</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Coach Omar</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 210 Members</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Leadership Dashboard</h2>
+    <div class="table-responsive dashboard-table">
+        <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Club Name</th>
+                    <th>Role</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Issa Ramy</td>
+                    <td><i class="bi bi-code-slash me-2 text-primary"></i>Coding Club</td>
+                    <td>President</td>
+                </tr>
+                <tr>
+                    <td>Ahmed Hassan</td>
+                    <td><i class="bi bi-robot me-2" style="color: #0a9d31;"></i>AI & Robotics Club</td>
+                    <td>President</td>
+                </tr>
+            </tbody>
+                <tr>
+                    <td> Adam Ali</td>
+                    <td><i class="bi bi-trophy-fill me-2" style="color: #ffc107;"></i>Sports Association</td>
+                    <td>President </td>
+                </tr>
+        </table>
+    </div>
+
+    <h2 class="section-header">Apply for a New Club</h2>
+    <div class="form-container">
+        <form>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label class="form-label fw-semibold">Proposed Club Name</label>
+                    <input type="text" class="form-control" placeholder="Enter club name" disabled>
+                </div>
+                <div class="col-12 mb-3">
+                    <label class="form-label fw-semibold">Faculty Advisor</label>
+                    <input type="text" class="form-control" placeholder="Name of advisor" disabled>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Club Objectives</label>
+                <textarea class="form-control" rows="3" placeholder="Describe the club's goals..." disabled></textarea>
+            </div>
+            
+            <div class="alert alert-secondary text-center shadow-sm mb-0" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                You must <strong><a href="login.html" class="alert-link">Login first</a></strong> to submit a new club request.
+            </div>
+        </form>
+    </div>
+
+</div>
+
+    <footer>
+    &copy; 2026 Event Management System. All rights reserved to Group 1.
+    </footer>
+
+</body>
+</html>

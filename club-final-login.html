@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organization & Club Management - Student E</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/club.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/globalStyle.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management System</title>
 
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<!-- CSS -->
+ <link rel="stylesheet" href="css/club.css">
+ <link rel="stylesheet" href="css/globalStyle.css">
+ <link rel="stylesheet" href="css/indexCss.css">
 </head>
-<body>
 
-<div class="container">
+<body>
+    <div class="top-header"> University Event management system</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo-name">
+        Room Management System
+    </div>
+
+    <ul class="nav-list">
+        <li><a href="dashboard-login-iframe.html">Dashboard</a></li>
+        <li><a href="room-login-iframe.html">Room</a></li>
+        <li><a href="UserDirectory-login-iframe.html">User Directory</a></li>
+        <li><a href="index.html" >Events</a></li>
+        <li><a href="club-login-iframe.html" class="active">Clubs</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+</div>
+
+<div class="container mt-5">
     
     <h2 class="section-header">University Club Profiles</h2>
     <div class="row g-4 mb-5">
@@ -21,7 +53,7 @@
             <div class="card club-card h-100">
                 <div class="card-body">
                     <h5 class="card-title text-primary fw-bold">
-                        <i class="bi bi-code-slash me-2"></i>Coding Club</h5>
+                        <i class="bi bi-code-slash me-2"> </i>Coding Club</h5>
                     <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Dr. Ahmad</p>
                     <p class="card-text text-muted"><strong>Member Count:</strong> 120 Members</p>
                 </div>
@@ -111,6 +143,9 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+    &copy; 2026 Event Management System. All rights reserved to Group 1.
+    </footer>
+
 </body>
 </html>

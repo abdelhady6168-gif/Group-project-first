@@ -28,6 +28,11 @@
 }
 /* ── Sidebar ── */
 /* ── Sidebar ── */
+.top-header{
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  border-bottom: 3px solid var(--gold) !important ;
+}
 .sidebar {
   width: 240px !important;
   min-height: 100vh !important;
@@ -152,7 +157,9 @@ a:hover { color: var(--gold) !important; }
 .navbar-brand { font-weight: 800; color: var(--white) !important; }
 .nav-link { color: rgba(255,255,255,0.85) !important; }
 .nav-link:hover, .nav-link.active { color: var(--white) !important; background-color: rgba(201,162,39,0.2) !important; border-radius: var(--radius) !important; }
-
+div button a{
+  color: var(--off-white);
+}
 /* ── Footer ── */
 footer { background-color: var(--primary-dark) !important; color: rgba(255,255,255,0.75) !important; border-top: 3px solid var(--gold) !important; padding: 2rem !important; }
 
