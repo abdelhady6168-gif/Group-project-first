@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization & Club Management - Student E</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">   
+    <link rel="stylesheet" href="css/indexCss.css"> 
+    <link rel="stylesheet" href="css/globalStyle.css">
+
+</head>
+<body>
+
+<div class="container">
+    
+    <h2 class="section-header">University Club Profiles</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                        <i class="bi bi-code-slash me-2"></i>Coding Club</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Dr. Ahmad</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 120 Members</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-success fw-bold">
+                        <i class="bi bi-robot me-2"></i>AI & Robotics Club</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Prof. Salem</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 85 Members</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card club-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-danger fw-bold"><i class="bi bi-trophy-fill me-2" style="color: #ffc107;"></i>Sports Association</h5>
+                    <p class="card-text mb-1"><strong>Faculty Advisor:</strong> Coach Omar</p>
+                    <p class="card-text text-muted"><strong>Member Count:</strong> 210 Members</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Leadership Dashboard</h2>
+    <div class="table-responsive dashboard-table">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Club Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Issa Ramy</td>
+                    <td><i class="bi bi-code-slash me-2 text-primary"></i>Coding Club</td>
+                    <td>President</td>
+                </tr>
+                <tr>
+                    <td>Ahmed Hassan</td>
+                    <td><i class="bi bi-robot me-2"></i>AI & Robotics Club</td>
+                    <td>President</td>
+                </tr>
+            </tbody>
+                <tr>
+                    <td> Adam Ali</td>
+                    <td><i class="bi bi-trophy-fill me-2"></i>Sports Association</td>
+                    <td>President </td>
+                </tr>
+        </table>
+    </div>
+
+    <h2 class="section-header">Apply for a New Club</h2>
+    <div class="form-container">
+        <form>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-semibold">Proposed Club Name</label>
+                    <input type="text" class="form-control" placeholder="Enter club name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-semibold">Faculty Advisor</label>
+                    <input type="text" class="form-control" placeholder="Name of advisor" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Club Objectives</label>
+                <textarea class="form-control" rows="3" placeholder="Describe the club's goals..."></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success px-5 shadow-sm">Submit Request</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

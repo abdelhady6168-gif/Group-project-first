@@ -14,7 +14,7 @@ body{
     left:0;
     width:260px;
     height:100vh;
-    background:linear-gradient(180deg,#367D8A,#24555e);
+    /*background:linear-gradient(180deg,#367D8A,#24555e);*/
     padding:25px 18px;
     box-shadow:4px 0 18px rgba(0,0,0,0.15);
 
@@ -96,4 +96,13 @@ body{
 .main-body p{
     font-size:22px;
     margin-bottom:10px;
+}
+
+
+.bi-robot{
+    color: #0d6efd;
+}
+
+.bi-trophy{
+    color: #ffc107;
 }
