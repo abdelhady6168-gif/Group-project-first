@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management System</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/globalStyle.css">
+<link rel="stylesheet" href="css/indexCss.css">
+</head>
+
+<body>
+    <div class="top-header"> University Event management system</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo-name">
+        Room Management System
+    </div>
+
+    <ul class="nav-list">
+        <li><a href="dashboard-login-iframe.html">Dashboard</a></li>
+        <li><a href="room-login-iframe.html">Room</a></li>
+        <li><a href="UserDirectory-login-iframe.html">User Directory</a></li>
+        <li><a href="index.html" >Events</a></li>
+        <li><a href="club-login-iframe.html" class="active">Clubs</a></li>
+        <li><a href="event-test-logout.html">Logout/a></li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+    <div class="container mt-4">
+
+        <!-- Rooms Table -->
+        <div class="card p-3 shadow-sm mt-5 mb-3">
+            <h4 class="card-title">Event Management</h4>
+
+            <table class="table table-striped mt-3">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Capacity</th>
+                        <th>Catagory</th>
+                        <th>Event State</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>AI & Robotics</td>
+                        <td>48</td>
+                        <td>Workshop</td>
+                        <td class="text-success">Available</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>                        
+                    </tr>
+
+                    <tr>
+                        <td>Sports Association</td>
+                        <td>0</td>
+                        <td>Sports</td>
+                        <td class="text-danger">Closed</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>
+                    </tr>
+
+                    <tr>
+                        <td>Coding Event</td>
+                        <td>7</td>
+                        <td>Seminar</td>
+                        <td class="text-success">Available</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>
+                    </tr>
+
+                    <tr>
+                        <td>World Ending</td>
+                        <td>-</td>
+                        <td>Extra</td>
+                        <td class="text-danger">Occupied</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>
+                    </tr>
+
+                    <tr>
+                        <td>Full marks</td>
+                        <td>-</td>
+                        <td>Extra</td>
+                        <td class="text-danger">Occupied</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cooking Event</td>
+                        <td>16</td>
+                        <td>Sports</td>
+                        <td class="text-success">Available</td>
+                        <td><div class="btn btn-warning"><i class="fa-solid fa-pen"></i></div></td>
+                        <td><div class="btn btn-danger"><i class="fa-sharp fa-solid fa-trash"></i></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="text-center my-4">
+            <a href="event-test-login.html" class="btn btn-primary px-4">
+                ← Back to Events
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+    &copy; 2026 Event Management System. All rights reserved to Group 1.
+    </footer>
+
+</body>
+</html>

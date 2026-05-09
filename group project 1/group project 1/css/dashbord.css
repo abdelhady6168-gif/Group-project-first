@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f4f7f9;
+    padding: 30px;
+
+}
+
+/* العنوان */
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #24555e;
+}
+
+/* الكروت */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: #367D8A;
+    font-size: 16px;
+}
+
+.stat-number {
+    font-size: 42px;
+    font-weight: bold;
+    color: #24555e;
+    margin-top: 10px;
+}
+
+/* الجدول */
+.events-list-container {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 4px solid #000;
+}
+
+.events-list-container h2 {
+    color: #24555e;
+    margin-bottom: 20px;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events-table th,
+.events-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.events-table th {
+    background: #f4f7f9;
+    color: #367D8A;
+}
+
+.events-table tr:hover {
+    background: #eef6f8;
+}
+
+.events-table td {
+    border-bottom: 1px solid #eee;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+    }
+}
